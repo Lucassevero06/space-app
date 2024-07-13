@@ -146,4 +146,5 @@ template {
 }
 `
 
+
 export default EstilosGlobais;
