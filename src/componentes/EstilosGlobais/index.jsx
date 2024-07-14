@@ -98,7 +98,6 @@ const EstilosGlobais = createGlobalStyle`
     [type="button"],
     [type="reset"],
     [type="submit"] {
-    -webkit-appearance: button;
     }
     button::-moz-focus-inner,
     [type="button"]::-moz-focus-inner,
@@ -111,7 +110,6 @@ const EstilosGlobais = createGlobalStyle`
     [type="button"]:-moz-focusring,
     [type="reset"]:-moz-focusring,
     [type="submit"]:-moz-focusring {
-    outline: 1px dotted ButtonText;
     }
     fieldset {
     padding: 0.35em 0.75em 0.625em;
@@ -140,7 +138,6 @@ const EstilosGlobais = createGlobalStyle`
     height: auto;
     }
     [type="search"] {
-    -webkit-appearance: textfield; 
     outline-offset: -2px; 
     }
     [type="search"]::-webkit-search-decoration {
