@@ -1,43 +1,61 @@
 import { createGlobalStyle } from "styled-components";
+import GandhiSansRegular from './fontes/GandhiSans-Regular.otf';
+import GandhiSansBold from './fontes/GandhiSans-Bold.otf';
 
 const EstilosGlobais = createGlobalStyle`
+
+    @font-face {
+        font-family: 'GandhiSansRegular';
+        src: local('Gandhi Sans Regular'),
+            local('GandhiSansRegular'),
+            url(${GandhiSansRegular});
+    }
+
+    @font-face {
+        font-family: 'GandhiSansBold';
+        src: local('Gandhi Sans Bold'),
+            local('GandhiSansBold'),
+            url(${GandhiSansBold});
+    }
+
     html {
-    line-height: 1.15; 
-    -webkit-text-size-adjust: 100%; 
+        line-height: 1.15; 
+        -webkit-text-size-adjust: 100%; 
+        font-family: 'GandhiSansRegular';
     }
     body {
-    margin: 0;
-    min-height: 100vh;
+        margin: 0;
+        min-height: 100vh;
     }
     main {
-    display: block;
+        display: block;
     }
     h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+        font-size: 2em;
+        margin: 0.67em 0;
     }
     hr {
-    box-sizing: content-box; 
-    height: 0; 
-    overflow: visible; 
+        box-sizing: content-box; 
+        height: 0; 
+        overflow: visible; 
     }
     a {
-    background-color: transparent;
+        background-color: transparent;
     }
     abbr[title] {
-    border-bottom: none; 
-    text-decoration: underline; 
-    text-decoration: underline dotted; 
+        border-bottom: none; 
+        text-decoration: underline; 
+        text-decoration: underline dotted; 
     }
     b,
-    strong {
-    font-weight: bolder;
+        strong {
+        font-weight: bolder;
     }
     code,
     kbd,
     samp {
-    font-family: monospace, monospace; 
-    font-size: 1em; 
+        font-family: monospace, monospace; 
+        font-size: 1em; 
     }
     small {
     font-size: 80%;
@@ -145,6 +163,5 @@ const EstilosGlobais = createGlobalStyle`
     display: none;
     }
 `
-
 
 export default EstilosGlobais;
