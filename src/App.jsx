@@ -1,7 +1,10 @@
-import { styled } from "styled-components"
-import EstilosGlobais from "./componentes/EstilosGlobais"
-import Cabecalho from "./componentes/Cabecalho/Cabecalho"
-import BarraLateral from "./componentes/BarraLateral/BarraLateral"
+import { styled } from "styled-components";
+import EstilosGlobais from "./componentes/EstilosGlobais/EstilosGlobais";
+import Cabecalho from "./componentes/Cabecalho/Cabecalho";
+import BarraLateral from "./componentes/BarraLateral/BarraLateral";
+import Banner from "./componentes/Banner/Banner";
+import bannerBackground from "/src/assets/banner.png";
+import Galeria from "./componentes/Galeria/Galeria";
 
 const FundoGradiente = styled.div`
   background: linear-gradient(174.61deg, #041833 4.16%, #04244F 48%, #154580 96.76%);
@@ -9,18 +12,45 @@ const FundoGradiente = styled.div`
   min-height: 100vh;
 `
 
+const AppContainer = styled.div`
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1440px;
+`
+
+const MainContainer = styled.main`
+  display: flex;
+  gap: 24px;
+`
+
+const ConteudoGaleria = styled.section`
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+`
+
 function App() {
 
   return (
     <FundoGradiente>
-      {/* Estilos Globais */}
       <EstilosGlobais/>
 
-      {/* Cabecalho */}
-      <Cabecalho/>
+      <AppContainer>
 
-      {/* Barra Latera */}
-      <BarraLateral/>
+        <Cabecalho/>
+
+        <MainContainer>
+
+          <BarraLateral/>
+          <ConteudoGaleria>
+            <Banner texto="fotos do espaço!" backgroundImage={bannerBackground}/>
+            <Galeria/>
+          </ConteudoGaleria>
+
+        </MainContainer>
+
+      </AppContainer>
+      
     </FundoGradiente>
   )
 }

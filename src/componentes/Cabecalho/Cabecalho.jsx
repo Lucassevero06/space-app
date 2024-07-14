@@ -8,7 +8,7 @@ const HeaderEstilizado = styled.header`
     align-items: center;
 
     img {
-        max-width: 212px;
+        max-width: 200px;
     }
 `
 
