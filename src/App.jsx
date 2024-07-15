@@ -38,6 +38,10 @@ const App = () => {
 
   const [fotoSelecionada, setFotoSelecionada] = useState(null);
 
+  const aoAlternarFavorito = (foto) => {
+    console.log(foto)
+  }
+
   return (
     <FundoGradiente>
       <EstilosGlobais/>
@@ -52,7 +56,9 @@ const App = () => {
           <ConteudoGaleria>
             <Banner texto="fotos do espaço!" backgroundImage={bannerBackground}/>
             <Galeria
-              aoFotoSelecionada={foto => setFotoSelecionada(foto)} fotos={fotosDaGaleria}/>
+              aoFotoSelecionada={foto => setFotoSelecionada(foto)}
+              aoAlternarFavorito={aoAlternarFavorito}
+              fotos={fotosDaGaleria}/>
           </ConteudoGaleria>
 
         </MainContainer>
