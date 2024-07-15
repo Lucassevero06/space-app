@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { useState } from "react";
 import EstilosGlobais from "./componentes/EstilosGlobais/EstilosGlobais";
 import Cabecalho from "./componentes/Cabecalho/Cabecalho";
 import BarraLateral from "./componentes/BarraLateral/BarraLateral";
@@ -6,7 +7,7 @@ import Banner from "./componentes/Banner/Banner";
 import bannerBackground from "/src/assets/banner.png";
 import Galeria from "./componentes/Galeria/Galeria";
 import fotos from "./fotos.json";
-import { useState } from "react";
+import ModalZoom from "./componentes/ModalZoom/ModalZoom";
 
 const FundoGradiente = styled.div`
   background: linear-gradient(174.61deg, #041833 4.16%, #04244F 48%, #154580 96.76%);
@@ -54,6 +55,8 @@ const App = () => {
         </MainContainer>
 
       </AppContainer>
+
+      <ModalZoom/>
       
     </FundoGradiente>
   )
