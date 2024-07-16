@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import { styled } from "styled-components"
 
 const FigureEstilizada = styled.figure`
     background-image: ${props => `url(${props.$backgroundImage})`};
@@ -22,12 +22,10 @@ const TituloEstilizado = styled.h1`
     padding: 0 64px;
 `
 
-const Banner = ({ texto, backgroundImage }) => {
-  return (
-    <FigureEstilizada $backgroundImage={backgroundImage}>
+const Banner = ({texto, backgroundImage}) => {
+    return (<FigureEstilizada $backgroundImage={backgroundImage}>
         <TituloEstilizado>{texto}</TituloEstilizado>
-    </FigureEstilizada>
-  )
+    </FigureEstilizada>)
 }
 
 export default Banner

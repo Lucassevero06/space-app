@@ -1,5 +1,5 @@
 import { styled } from "styled-components"
-import Titulo from "../../Titulo/Titulo"
+import Titulo from "../../Titulo"
 
 import fotos from './fotos-populares.json'
 
